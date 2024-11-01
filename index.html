@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muzamil Ahmed - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header h3 {
+            font-weight: normal;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        header a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a.active {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+        }
+
+        section {
+            margin: 40px 0;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+        }
+
+        .skills ul, .experience ul, .education ul, .certifications ul, .publications ul {
+            list-style-type: none;
+        }
+
+        .skills ul li, .certifications ul li {
+            padding: 5px 0;
+        }
+
+        .experience-item, .education-item, .publication-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3, .education-item h3, .publication-item h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .experience-item h4, .education-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .experience-item ul, .education-item ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Muzamil Ahmed</h1>
+        <h3>Senior Software Test Engineer at ŌURA</h3>
+        <p>Oulu, Finland</p>
+        <p>
+            <a href="mailto:muzkpr@gmail.com">muzkpr@gmail.com</a> | 
+            <a href="tel:+358404123092">+358 40 4123092</a>
+        </p>
+        <p>
+            <a href="https://linkedin.com/in/muzamilahmed" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/muzahm01" target="_blank">GitHub</a>
+        </p>
+        <nav>
+            <a href="#" class="nav-link active" data-section="introduction">Introduction</a>
+            <a href="#" class="nav-link" data-section="skills">Skills</a>
+            <a href="#" class="nav-link" data-section="experience">Experience</a>
+            <a href="#" class="nav-link" data-section="education">Education</a>
+            <a href="#" class="nav-link" data-section="certifications">Certifications</a>
+            <a href="#" class="nav-link" data-section="publications">Publications</a>
+        </nav>
+    </header>
+
+    <section id="introduction" class="active">
+        <h2>Introduction</h2>
+        <p>
+            I am a dedicated Senior Software Test Engineer with over a decade of experience in software testing and quality assurance. My expertise lies in developing and maintaining robust test automation frameworks, optimizing CI/CD pipelines, and collaborating with cross-functional teams to deliver high-quality software products. With a strong background in Python and Pytest, I have a proven track record of improving testing efficiency and reducing defect leakage.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                <li><strong>Programming:</strong> Python</li>
+                <li><strong>Test Automation:</strong> Pytest, Appium</li>
+                <li><strong>Mobile Testing:</strong> Android, iOS</li>
+                <li><strong>CI/CD:</strong> GitHub Actions, CI infrastructure</li>
+                <li><strong>Testing Types:</strong> Integration, Smoke, Acceptance, E2E, Regression, Exploratory</li>
+                <li><strong>Test Planning:</strong> Test plans, Test cases, Test scripts, Frameworks</li>
+                <li><strong>Collaboration:</strong> Cross-functional teams, Design discussions, Pair programming</li>
+                <li><strong>Issue Tracking:</strong> Defect reporting, Tracking, Regression automation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience">
+            <div class="experience-item">
+                <h3>ŌURA</h3>
+                <h4>Senior Software Test Engineer | July 2021 – Present</h4>
+                <ul>
+                    <li>Developed and maintained test automation frameworks using Python, Pytest, and Appium for Android and iOS applications.</li>
+                    <li>Enhanced automation library architecture for improved modularity and scalability.</li>
+                    <li>Implemented CI/CD pipelines using GitHub Actions, improving deployment efficiency.</li>
+                    <li>Improved CI infrastructure for iOS devices and simulators, reducing build times by 20%.</li>
+                    <li>Collaborated with infrastructure teams to refine CI workflows, enhancing pipeline robustness.</li>
+                </ul>
+            </div>
+            <!-- Additional experience items here -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <div class="education-item">
+                <h3>University of Oulu, Finland</h3>
+                <h4>Master's Degree in Computer Software Engineering | 2012 – 2014</h4>
+            </div>
+            <div class="education-item">
+                <h3>University of the Punjab, Lahore, Pakistan</h3>
+                <h4>Bachelor of Science (Hons) in Information Technology | 2005 – 2009</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications">
+            <ul>
+                <li>
+                    <strong>AI For Everyone</strong> -- Coursera<br>
+                    Issued: August 2022<br>
+                    Credential ID: 5JW7QZLUCSPM
+                </li>
+                <li>
+                    <strong>Build Local Development Environments Using Docker Containers</strong> -- Coursera<br>
+                    Issued: January 2022<br>
+                    Credential ID: WNRNTBLZWXEF
+                </li>
+                <li>
+                    <strong>Docker for Absolute Beginners</strong> -- Coursera<br>
+                    Issued: December 2021<br>
+                    Credential ID: JX5M2CR8BTRV
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publications">
+            <ul>
+                <li class="publication-item">
+                    Tosun, A., Ahmed, M., Turhan, B., & Juristo, N. (2018). On the effectiveness of unit tests in test-driven development. <em>Proceedings of the International Conference on Software and System Process</em>, 113-122.
+                </li>
+                <li class="publication-item">
+                    Hosio, S., Ferreira, D., Goncalves, J., Van Berkel, N., Luo, C., Ahmed, M., et al. (2016). Monetary assessment of battery life on smartphones. <em>Proceedings of the CHI Conference on Human Factors in Computing Systems</em>, 1869-1880.
+                </li>
+                <li class="publication-item">
+                    Anagnostopoulos, T., Ferreira, D., Samodelkin, A., Ahmed, M., & Kostakos, V. (2016). Cyclist-aware traffic lights through distributed smartphone sensing. <em>Pervasive and Mobile Computing</em>, 31, 22-36.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Muzamil Ahmed</p>
+    </footer>
+</div>
+
+<script>
+    // JavaScript for toggling sections
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    function showSection(sectionId) {
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+        navLinks.forEach(link => {
+            if (link.dataset.section === sectionId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const sectionId = this.dataset.section;
+            showSection(sectionId);
+        });
+    });
+
+    // Show the introduction section by default
+    showSection('introduction');
+</script>
+
+</body>
+</html>
